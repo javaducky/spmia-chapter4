@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/javaducky/spmia-chapter4.svg?branch=master)](https://travis-ci.org/javaducky/spmia-chapter4)
+
 #Introduction
 All of the code examples in this book will include maven files for building docker images of the services being built.  As we progress through the book we will be leveraging more and more infrastructure as we build our services out.   These additional pieces of infrastructure will also be docker containers.  
 

@@ -1,10 +1,10 @@
 eurekaserver:
-   image:   johncarnell/tmx-eurekasvr:chapter4
+   image:   javaducky/tmx-eurekasvr:chapter4
    ports:
        - "8761:8761"
 
 configserver:
-    image: johncarnell/tmx-confsvr:chapter4
+    image: javaducky/tmx-confsvr:chapter4
     ports:
        - "8888:8888"
     links:
@@ -31,7 +31,7 @@ database:
       - POSTGRES_DB=eagle_eye_local
 
 licensingservice:
-    image: johncarnell/tmx-licensing-service:chapter4
+    image: javaducky/tmx-licensing-service:chapter4
     ports:
       - "8080:8080"
     links:
@@ -45,7 +45,7 @@ licensingservice:
       EUREKASERVER_URI: "http://eurekaserver:8761/eureka/"
 
 organizationservice:
-    image: johncarnell/tmx-organization-service:chapter4
+    image: javaducky/tmx-organization-service:chapter4
     ports:
       - "8085:8085"
     links:
@@ -59,7 +59,7 @@ organizationservice:
       EUREKASERVER_URI: "http://eurekaserver:8761/eureka/"
 
 organizationservice2:
-    image: johncarnell/tmx-organization-service:chapter4
+    image: javaducky/tmx-organization-service:chapter4
     ports:
       - "8086:8086"
     links:
